@@ -84,6 +84,8 @@ textarea {
 /* colors */
 /* fonts */
 body {
+  background: #c36eb7;
+  color: #fff;
   font-family: "Fira Sans", sans-serif; }
 
 h1 {
@@ -105,9 +107,18 @@ h4 span {
 .content-wrapper {
   margin: 0px 20px; }
 
+main a:link,
+main a:visited {
+  color: black;
+  font-weight: 700;
+  text-decoration: none; }
+  main a:link:hover,
+  main a:visited:hover {
+    border-bottom: 2px solid #f4ce2f; }
+
 /* header */
 header {
-  background: #fff;
+  background: #cfe3ab;
   position: -webkit-sticky;
   position: sticky;
   top: 0; }
@@ -115,6 +126,7 @@ header {
     display: flex;
     justify-content: space-between; }
     header .content-wrapper h2 {
+      color: #c36eb7;
       font-family: "Lato", sans-serif;
       font-weight: 700;
       line-height: 1.25rem;
@@ -125,24 +137,33 @@ header {
       list-style-type: none; }
       header .content-wrapper nav ul li a:link,
       header .content-wrapper nav ul li a:visited {
+        color: black;
+        font-weight: 700;
         text-decoration: none;
         text-transform: lowercase; }
+        header .content-wrapper nav ul li a:link:hover,
+        header .content-wrapper nav ul li a:visited:hover {
+          border-bottom: 2px solid #c36eb7; }
 
 /* hero */
-#hero img {
-  width: 100%; }
-#hero .content-wrapper {
-  padding: 10px 0px; }
-#hero h1 {
-  line-height: 1.75rem;
-  margin: 0;
-  padding-bottom: 5px;
-  text-align: left; }
-#hero h2 {
-  line-height: 1.5rem;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: left; }
+#hero {
+  background: #cfe3ab;
+  color: #c36eb7; }
+  #hero img {
+    width: 100%; }
+  #hero .content-wrapper {
+    padding: 20px 0px; }
+  #hero h1 {
+    line-height: 1.75rem;
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: left; }
+  #hero h2 {
+    color: black;
+    line-height: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left; }
 
 /* about us */
 #about-us h1 {
@@ -155,9 +176,13 @@ header {
   #about-us .about-us-container aside {
     text-align: center;
     padding: 20px 0px; }
+    #about-us .about-us-container aside i {
+      color: #cfe3ab; }
     #about-us .about-us-container aside h2 {
+      font-weight: 700;
       margin: 0;
-      padding: 10px 0px; }
+      padding: 10px 0px;
+      text-transform: lowercase; }
     #about-us .about-us-container aside p {
       text-align: justify;
       margin: 0; }
@@ -181,20 +206,29 @@ header {
     /* Toggle this class when clicking on the popup container (hide and show the popup) */
     /* Add animation (fade in the popup) */ }
     #programming .programming-container article .content-wrapper h2 {
+      color: #cfe3ab;
       font-weight: 700;
       line-height: 1.75rem;
       margin: 0; }
     #programming .programming-container article .content-wrapper h3 {
       margin: 0; }
     #programming .programming-container article .popup {
+      background: #cfe3ab;
+      color: #c36eb7;
+      font-weight: 700;
+      padding: 10px 20px;
       position: relative;
       display: inline-block;
       cursor: pointer; }
+      #programming .programming-container article .popup h2 {
+        color: #c36eb7;
+        font-size: 1.25rem;
+        text-transform: uppercase; }
     #programming .programming-container article .popup .popuptext {
       visibility: hidden;
       width: 300px;
-      background-color: #555;
-      color: #fff;
+      background-color: #cfe3ab;
+      color: black;
       border-radius: 6px;
       padding: 10px;
       position: absolute;
@@ -202,6 +236,12 @@ header {
       bottom: 125%;
       left: 50%;
       margin-left: -80px; }
+      #programming .programming-container article .popup .popuptext a:link,
+      #programming .programming-container article .popup .popuptext a:visited {
+        color: #c36eb7; }
+        #programming .programming-container article .popup .popuptext a:link:hover,
+        #programming .programming-container article .popup .popuptext a:visited:hover {
+          border-bottom: 2px solid black; }
     #programming .programming-container article .popup .popuptext::after {
       content: "";
       position: absolute;
@@ -210,7 +250,7 @@ header {
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: #555 transparent transparent transparent; }
+      border-color: #cfe3ab transparent transparent transparent; }
     #programming .programming-container article .popup .show {
       visibility: visible;
       -webkit-animation: fadeIn 1s;
