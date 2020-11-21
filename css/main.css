@@ -173,13 +173,96 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
-  #programming .programming-container article .content-wrapper h2 {
-    font-weight: 700;
-    line-height: 1.75rem;
-    margin: 0; }
-  #programming .programming-container article .content-wrapper h3 {
-    margin: 0; }
+  #programming .programming-container article {
+    /* pop up */
+    /* Popup container */
+    /* The actual popup (appears on top) */
+    /* Popup arrow */
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    /* Add animation (fade in the popup) */ }
+    #programming .programming-container article .content-wrapper h2 {
+      font-weight: 700;
+      line-height: 1.75rem;
+      margin: 0; }
+    #programming .programming-container article .content-wrapper h3 {
+      margin: 0; }
+    #programming .programming-container article .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+    #programming .programming-container article .popup .popuptext {
+      visibility: hidden;
+      width: 300px;
+      background-color: #555;
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px; }
+    #programming .programming-container article .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+    #programming .programming-container article .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* tickets */
+#tickers .ticket-container h1 {
+  margin: 0;
+  padding: 10px 0px; }
 
+/* desktop styles */
+@media screen and (min-width: 768px) {
+  /* header */
+  header {
+    height: 60px; }
+    header h2 {
+      padding-top: 10px !important; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+
+  /* hero */
+  #hero .content-wrapper {
+    display: flex;
+    justify-content: space-between; }
+
+  /* about us */
+  #about-us .about-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #about-us .about-us-container aside {
+      width: 25%; }
+
+  /* programming */
+  #programming .programming-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    #programming .programming-container article {
+      width: 40%;
+      padding: 25px 0px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
