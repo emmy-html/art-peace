@@ -180,6 +180,30 @@ $heading-font: 'Lato', sans-serif;
       text-transform: uppercase;
     }
   }
+  /* about us */ 
+  #about-us {
+    h1 {
+      line-height: 1.75rem;
+    }
+    .about-us-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      aside {
+        text-align: center;
+        padding: 20px 0px;
+        h2 {
+          margin: 0;
+          padding: 10px 0px;
+        }
+        p {
+          text-align: justify;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
 
   /* ==========================================================================
      Helper classes
