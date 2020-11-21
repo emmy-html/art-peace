@@ -173,17 +173,20 @@ $heading-font: 'Lato', sans-serif;
       line-height: 1.75rem;
       margin: 0;
       padding-bottom: 5px;
+      text-align: left;
     }
     h2 {
       line-height: 1.5rem;
       margin: 0;
       text-transform: uppercase;
+      text-align: left;
     }
   }
   /* about us */ 
   #about-us {
     h1 {
       line-height: 1.75rem;
+      text-align: left;
     }
     .about-us-container {
       display: flex;
@@ -199,6 +202,34 @@ $heading-font: 'Lato', sans-serif;
         p {
           text-align: justify;
           margin: 0;
+        }
+      }
+    }
+  }
+  /* programming */ 
+  #programming {
+    h1 {
+      line-height: 1.75rem;
+      text-align: left;
+    }
+    p {
+      text-align: justify;
+    }
+    .programming-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      article {
+        .content-wrapper {
+          h2 {
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin: 0;
+          }
+          h3 {
+            margin: 0;
+          }
         }
       }
     }
