@@ -132,7 +132,8 @@ $heading-font: 'Lato', sans-serif;
   .content-wrapper {
     margin: 0px 20px;
   }
-  main {
+  main,
+  footer {
     a:link,
     a:visited {
       color: black;
@@ -338,6 +339,9 @@ $heading-font: 'Lato', sans-serif;
         padding: 10px 0px;
       }
     }
+  }
+  footer {
+    padding: 20px 0px;
   }
 /* desktop styles */ 
 @media screen and (min-width: 768px) {
