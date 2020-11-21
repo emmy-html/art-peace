@@ -96,6 +96,12 @@ h4 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 200; }
 
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  display: block; }
+
 .content-wrapper {
   margin: 0px 20px; }
 
@@ -115,8 +121,6 @@ header {
       text-transform: uppercase;
       margin: 0;
       padding-top: 20px; }
-      header .content-wrapper h2 span {
-        display: block; }
     header .content-wrapper nav ul {
       list-style-type: none; }
       header .content-wrapper nav ul li a:link,
@@ -127,10 +131,16 @@ header {
 /* hero */
 #hero img {
   width: 100%; }
+#hero .content-wrapper {
+  padding: 10px 0px; }
 #hero h1 {
-  line-height: 1.75rem; }
-  #hero h1 span {
-    display: block; }
+  line-height: 1.75rem;
+  margin: 0;
+  padding-bottom: 5px; }
+#hero h2 {
+  line-height: 1.5rem;
+  margin: 0;
+  text-transform: uppercase; }
 
 /* ==========================================================================
    Helper classes
